@@ -49,45 +49,43 @@ function alert(string $message) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <style>
-
       body{
-			margin: 0 auto;
-			font-family: 'Roboto', sans-serif;
-			text-align: center;
-			background: #F1F1F1;
-		  }
+        margin: 0 auto;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        background: #F1F1F1;
+      }
       a {
-			font-size: 8px;
-		  }
-		 .header {
-      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-      color: white;
-			font-size: 32px;
-			width: 100%;
-			background: #26A69A;
-			padding-top: 5px;
-			padding-bottom: 5px;
-		}
-    .page {
-      border-radius: 2px 2px 0px 0px; /*  >inb4 OCD */
-      margin: auto;
-      width: 50%;
-      margin-top: 50px;
-      border: 1px solid #E8E8E8;
-      background: white;
-    }
-    .title {
-      color: white;
-      padding: 5px;
-      font-weight: bold;
-      border-radius: 2px 2px 0px 0px;
-      background: #26A69A;
-      width: auto;
-    }
-    .content {
-      padding: 10px;
-    }
-
+        font-size: 8px;
+      }
+      .header {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        color: white;
+        font-size: 32px;
+        width: 100%;
+        background: #26A69A;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .page {
+        border-radius: 2px 2px 0px 0px; /*  >inb4 OCD */
+        margin: auto;
+        width: 50%;
+        margin-top: 50px;
+        border: 1px solid #E8E8E8;
+        background: white;
+      }
+      .title {
+        color: white;
+        padding: 5px;
+        font-weight: bold;
+        border-radius: 2px 2px 0px 0px;
+        background: #26A69A;
+        width: auto;
+      }
+      .content {
+        padding: 10px;
+      }
     </style>
   </head>
   <body>
