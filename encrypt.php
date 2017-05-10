@@ -4,10 +4,10 @@
 * I know crypt are not the best thing to use, or md5. The system was build at the time when md5 was considered safe for using for encrypting passwords. ikr? crazy.
 * this tool is just make things easy for me.
 * @author Marvin Ferwerda
-* @version 0.1
+* @version 1.0
 */
 
-if (isset($_POST['hash']) == true) {
+if (isset($_POST['hash'])) {
   if (password_verify($_POST['password'], $_POST['hash']) == true) {
     alert("Password matches!");
   }
@@ -16,7 +16,7 @@ if (isset($_POST['hash']) == true) {
   }
 }
 
-if (isset($_POST['password_hash']) == true) {
+if (isset($_POST['password_hash'])) {
   alert(crypt($_POST['password_hash'], (string)$_POST['Salt']));
 }
 
@@ -29,7 +29,7 @@ if(isset($_POST['md5_string']) == true) {
   }
 }
 
-if(isset($_POST['md5_text']) == true) {
+if(isset($_POST['md5_text'])) {
   alert(md5($_POST['md5_text']));
 }
 
@@ -116,8 +116,9 @@ function alert(string $message) {
           </form>
         </div>
     </div>
+
     <div class="page">
-        <div class="title">Md5 Hash matcher</div>
+        <div class="title">Md5 Hash matcher ( md5(); )</div>
         <div class="content">
           <form class="hash_check" action="" method="post">
             <label for="hash">Md5 Hash: </label>
@@ -131,7 +132,7 @@ function alert(string $message) {
     </div>
 
     <div class="page">
-        <div class="title">Md5ifyer</div>
+        <div class="title">Md5ifyer ( md5(); )</div>
         <div class="content">
           <form class="hash_check" action="" method="post">
             <label for="hash">Text: </label>
@@ -143,3 +144,4 @@ function alert(string $message) {
 
   </body>
 </html>
+<!-- funny isnt it when there's more html then php lines. -->
